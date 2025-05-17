@@ -13,7 +13,8 @@ spec:
         app: cart
     spec:
       containers:
-      - image: nginx
+      - image: cart:latest
+        imagePullPolicy: Never
         name: nginx
         ports:
-        - containerPort: 8080
+        - containerPort: 3000
